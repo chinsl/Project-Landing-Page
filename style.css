@@ -1,3 +1,9 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: Roboto;
     margin: 0;
@@ -9,27 +15,38 @@ body {
 header {
     background-color: #1F2937;
     color: #E5E7EB;
-    margin: 0;
+
 }
 
 main {
     background-color: #1F2937;
     margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-between;
 }
 
 .main {
     width: 50%;
+    padding-right: 100px;
+    margin: 0;
+    
 }
+
+main *{
+    padding: 0;
+}
+
 
 main img {
     width: 500px;
     height: 300px;
+    background-color: grey;
 }
 
 main, header {
     padding: 25px 200px;
+
 }
 
 main {
@@ -41,7 +58,7 @@ header ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 15px;
 }
 
 header, header ul {
@@ -49,8 +66,6 @@ header, header ul {
     justify-content: space-between;
     align-items: center;
 }
-
-
 
 #logo, h1{
     color: #F9FAf8;
@@ -78,23 +93,35 @@ aside, button {
 
 button {
     border-style: none; 
-    border-radius: 5%;
+    border-radius: 6px;
     padding: 5px 15px;
     color: #F9FAf8;
 }
 
 h2 {
     font-size: 36px;
+    text-align: center;
 }
 
 .quote {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: #e5e7eb;
+    padding: 100px 300px;
 }
+
+.quote span {
+    align-self: flex-end;
+    padding-right: 80px;
+    font-weight: bold;
+}
+
 
 blockquote {
     color: #1F2937;
     font-size: 36px;
-    font-style: oblique 10deg;
+    font-style: italic;
 }
 
 a {
@@ -109,3 +136,57 @@ h4 {
 aside span {
     color: #E5E7EB;
 }
+
+.container {
+    max-width: 175px;
+    text-align: center;
+
+}
+
+.container img {
+    height: 200px;
+    width: 200px;
+    border: solid 3px #3882f6;
+    border-radius: 10px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 50px;
+}
+
+main + section {
+    padding-top: 20px;
+    margin:0;
+}
+
+.signup {
+    padding: 75px 150px;
+    margin: 0;
+
+}
+
+aside {
+    padding: 30px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+aside button {
+    border: 1px solid white;
+    padding: 5px 30px;
+    font-size: 15px;
+}
+
+footer {
+    background-color: #1F2937;
+    text-align: center;
+    color: #F9FAf8;
+    padding: 30px;
+}
+
+
+
